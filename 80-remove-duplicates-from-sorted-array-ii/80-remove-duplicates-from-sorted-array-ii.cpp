@@ -3,26 +3,19 @@ class Solution
 public:
     int removeDuplicates(vector<int> &nums)
     {
-        int prev = nums[0], count = 1, pos = 1;
-        for (int i = 1; i < nums.size(); i++)
+        
+        if(nums.size()<3)
         {
-            if (prev != nums[i])
-            {
-                count = 1;
-                prev = nums[i];
-                nums[pos] = nums[i];
-                pos++;
-            }
-            else
-            {
-                if (count < 2)
-                {
-                    nums[pos] = nums[i];
-                    pos++;
-                }
-                count++;
-            }
+            return nums.size();
         }
-        return pos;
+        int in=2;
+       for(int i=2;i<nums.size();i++)
+       {
+           if(nums[i]!=nums[in-2])
+           {
+               nums[in++]=nums[i];
+           }
+       }
+        return in;
     }
 };
