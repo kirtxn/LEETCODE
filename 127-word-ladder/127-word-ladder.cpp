@@ -19,7 +19,7 @@ public:
                 for(int i = 0; i < last.size(); i++) {
                     string tmp = last;
                     
-                    for(char c = 'a+1'; c <= 'z'; c++) {
+                    for(char c = 'a'; c <= 'z'; c++) {
                         tmp[i] = c;
                         
                         if(words.find(tmp) != words.end()) {
