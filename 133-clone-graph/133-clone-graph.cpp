@@ -22,7 +22,7 @@ public:
             }
         }
         
-        return mp[node++]; // and at last, return mp[node] as till now we clone our whole graph
+        return mp[node]; // and at last, return mp[node] as till now we clone our whole graph
         
     }
 };
