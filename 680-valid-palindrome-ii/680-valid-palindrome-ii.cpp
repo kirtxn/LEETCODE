@@ -20,8 +20,7 @@ public:
             }
 			// for optimising code if cnt is greater than 1 
             // we will just break the loop as only one char can skipped/deleted.
-            if(cnt > 1)
-                break;
+            
         }
         
 		// reinitialize pointer 
@@ -44,8 +43,7 @@ public:
             }
 			// for optimising code if cnt is greater than 1 
             // we will just break the loop as only one char can skipped/deleted.
-            if(cnt1 > 1)
-                break;
+            
                
         }
         
